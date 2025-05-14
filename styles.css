@@ -1,0 +1,190 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: hsl(225, 100%, 94%); /* Pale blue */
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Card styles */
+.card {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(56, 41, 224, 0.15);
+  max-width: 450px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 32px;
+  text-align: center;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%); /* Dark blue */
+  font-weight: 900;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.description {
+  color: hsl(224, 23%, 55%); /* Desaturated blue */
+  margin-bottom: 24px;
+  padding: 0 8px;
+}
+
+/* Plan container styles */
+.plan-container {
+  background-color: hsl(225, 100%, 98%); /* Very pale blue */
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.plan-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.music-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.plan-details h2 {
+  color: hsl(223, 47%, 23%); /* Dark blue */
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.plan-details p {
+  color: hsl(224, 23%, 55%); /* Desaturated blue */
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.change-link {
+  color: hsl(245, 75%, 52%); /* Bright blue */
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: underline;
+  transition: color 0.2s, opacity 0.2s;
+}
+
+.change-link:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/* Button styles */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: hsl(245, 75%, 52%); /* Bright blue */
+  color: white;
+  box-shadow: 0 15px 20px rgba(56, 41, 224, 0.2);
+  margin-bottom: 16px;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: hsl(224, 23%, 55%); /* Desaturated blue */
+}
+
+.btn-secondary:hover {
+  color: hsl(223, 47%, 23%); /* Dark blue */
+}
+
+/* Responsive styles */
+@media (max-width: 375px) {
+  body {
+    background-image: url('./images/pattern-background-mobile.svg');
+    padding: 24px 0;
+  }
+  
+  .card {
+    width: 87%;
+  }
+  
+  .card-content {
+    padding: 24px;
+  }
+  
+  h1 {
+    font-size: 22px;
+  }
+  
+  .description {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .plan-container {
+    padding: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .plan-info {
+    gap: 12px;
+  }
+  
+  .music-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .plan-details h2,
+  .plan-details p {
+    font-size: 14px;
+  }
+  
+  .change-link {
+    font-size: 13px;
+  }
+  
+  .btn {
+    padding: 14px;
+    font-size: 14px;
+  }
+}

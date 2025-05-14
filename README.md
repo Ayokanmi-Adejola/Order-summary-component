@@ -26,7 +26,6 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop View](./design/desktop-preview.jpg)
-![Mobile View](./design/mobile-design.jpg)
 
 
 ## My process
